@@ -1,0 +1,19 @@
+.animated-text {
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+
+  > .animated-char {
+    display: inline-block;
+    transition: all .3s ease;
+
+    &.active {
+      color: red;
+      font-size: 40px;
+    }
+  }
+}
